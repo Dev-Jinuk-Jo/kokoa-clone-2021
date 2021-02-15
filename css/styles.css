@@ -2,15 +2,60 @@
 
 @import "reset.css";
 @import "variables.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
 
 /* Components */
 @import "components/status-bar.css";
-@import "components/nav-bar.css";
+@import "components/screen.css";
+@import "components/nav.css";
+@import "components/profile.css";
+@import "components/chat_list.css";
+@import "components/no-mobile.css";
 
 /* Screens */
 @import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
 
+* {
+  box-sizing: border-box;
+  -ms-overflow-style: none; /* IE, Edge scrollbar hiding */
+  scrollbar-width: none; /* firefox scrollbar hiding */
+}
+*::-webkit-scrollbar {
+  display: none; /* chrome, safari scrollbar hiding */
+}
 body {
-  font-family: "Open Sans", sans-serif;
-  height: 1000vh;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+.btn-alert--count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 2px;
+  left: 30px;
+  min-width: 26px;
+  height: 26px;
+  padding: 0 8px;
+  border-radius: 13px;
+  font-size: 16px;
+  color: white;
+  background-color: tomato;
+}
+.btn-alert--nocount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: tomato;
 }

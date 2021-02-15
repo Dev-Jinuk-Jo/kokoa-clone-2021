@@ -1,0 +1,240 @@
+.chat {
+  background-color: #abc1d1;
+}
+.datebox {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 16px 0;
+  padding: 0 20px;
+}
+.chatbox {
+  display: flex;
+  margin: 10px 0;
+  padding: 0 20px;
+}
+.chat-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 20px;
+  color: white;
+  background-color: #92a4b2;
+}
+.chatbox__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.chatbox__thumb img {
+  width: inherit;
+  height: auto;
+}
+.chatbox__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: calc(100% - 160px);
+  position: relative;
+  height: 80%;
+}
+.chatbox__username {
+  align-items: center;
+  margin: 6px 0 8px 0;
+  color: #535c63;
+  font-size: 18px;
+}
+.chatbox__message {
+  padding: 16px;
+  font-size: 20px;
+  border-radius: 0 20px 20px 20px;
+  background-color: white;
+  word-wrap: break-word;
+}
+.chat-time {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 6px;
+  color: #535c63;
+  font-size: 15px;
+}
+.chatbox--send {
+	display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0 20px;
+}
+.popsend {
+	opacity: 0;
+	animation: popsend 0s forwards 2s;
+}
+@keyframes popsend {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.chatbox__message--send {
+  max-width: calc(100% - 160px);
+  padding: 16px;
+  font-size: 20px;
+  border-radius: 20px 0 20px 20px;
+  background-color: #fee500;
+  word-wrap: break-word;
+}
+.chatbox__message img,
+.chatbox__message--send img{
+	max-width: 100%;
+	height: auto;
+}
+.lower-interface {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 66px;
+  overflow: hidden;
+	transition: 0.5s ease-in-out;
+}
+.lower-interface:hover {
+  height: 398px;
+}
+.poppop {
+	animation: poppop ease-in-out 3s;
+}
+@keyframes poppop {
+	0% {
+		height: 66px;
+	}
+	15% {
+		height: 100px;
+	}
+	30% {
+		height: 66px;
+	}
+	38% {
+		height: 80px;
+	}
+	45% {
+		height: 66px;
+	}
+	100% {
+		height: 66px;
+	}
+}
+.chat-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 67px;
+  padding: 0 20px;
+  background-color: white;
+}
+.collapse-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 34px;
+	height: 34px;
+	margin-right: 20px;
+	border: 2px solid #90949c;
+	border-radius: 10px;
+	color: #90949c;
+	font-size: 36px;
+	font-weight: 300;
+}
+.chat-input {
+  height: 50px;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  border: 2px solid #e3e3e3;
+  border-radius: 25px;
+  font-size: 20px;
+  background-color: #f8f8f8;
+}
+.imoticon-menu {
+  position: absolute;
+  right: 87px;
+  color: #90949c;
+}
+.send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  right: 24px;
+  border: 1px solid #e8d100;
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: #fee500;
+}
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 4px 8px 4px;
+  height: calc(100% - 67px);
+  background-color: #d1d4d9;
+}
+.keyboard__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.keyboard__row:nth-child(2) {
+  padding: 0 24px;
+}
+.keyboard__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 66px;
+  padding-bottom: 6px;
+  border-radius: 8px;
+  font-size: 36px;
+  background-color: white;
+  box-shadow: 0 1.5px 0 0 #888a8d;
+}
+.u1 {
+  width: 60px;
+  padding: 0;
+  background-color: #abb1ba;
+}
+}
+.shift {
+  font-size: 30px;
+  margin-right: 11px;
+}
+.backspace {
+  margin-left: 11px;
+}
+.icon-font {
+  font-size: 16px;
+  padding: 0;
+}
+.u2 {
+  width: 130px;
+  font-size: 24px;
+}
+.u4 {
+  width: 226px;
+  font-size: 24px;
+}

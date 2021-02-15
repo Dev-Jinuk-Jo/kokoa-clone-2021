@@ -1,0 +1,17 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  margin-bottom: 100px;
+}
+.content-in {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}

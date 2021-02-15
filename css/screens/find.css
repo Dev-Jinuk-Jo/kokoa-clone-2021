@@ -1,0 +1,131 @@
+.find__function-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 160px;
+}
+.find__function-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.find__function-btn__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  text-align: center;
+}
+.find__function-btn__id-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 3px solid black;
+  border-radius: 50%;
+  font-weight: 700;
+}
+.devide-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin: 0 20px;
+  padding: 0;
+  border-top: 1.5px solid #e0e0e0;
+  color: #7f7f7f;
+  font-size: 18px;
+}
+.devide-bar-btn {
+  color: #a3a3a3;
+}
+.recommended-friends {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+  color: #a3a3a3;
+  font-size: 20px;
+}
+.open-chat {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 154px;
+  margin: 0 20px;
+  padding: 0;
+  border-bottom: 1.5px solid #e0e0e0;
+}
+.open-chat__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: calc(100% - 150px);
+  height: 100px;
+}
+.open-chat__name {
+  font-size: 24px;
+}
+.open-chat__tag {
+  color: #a3a3a3;
+  font-size: 18px;
+}
+.open-chat__status {
+  display: flex;
+  align-items: center;
+  color: #999999;
+}
+.open-chat__status__thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.open-chat__status__thumb img {
+  width: 100%;
+  height: auto;
+}
+.open-chat__status__member {
+  padding: 0 10px;
+  border-right: 1.5px solid #999999;
+}
+.open-chat__status__active {
+  padding: 0 10px;
+  color: #ff63c3;
+}
+.open-chat__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.open-chat__thumb img {
+  width: 100%;
+  height: auto;
+}
+.open-chat__thumb__fav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  height: 26px;
+  padding: 0 12px;
+  border-radius: 13px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.open-chat__thumb__fav i {
+  margin-right: 4px;
+}
